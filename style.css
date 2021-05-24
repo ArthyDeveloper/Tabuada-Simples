@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(31, 31, 31);
+}
+.Imagem{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    transform: translateX(100px) translateY(10px);
+}
+
+.TítuloDiv{
+    background-color: rgb(110, 30, 110);
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+    height: 60px;
+    width: 190px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: -6px 5px 5px black;
+}
+.TítuloP{
+    background-color: none;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    cursor: default;
+}
+
+/* Parte das contas e display */
+
+.ContasDiv{
+    background-color: rgb(119, 42, 119);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    height: 400px;
+    width: 500px;
+    border-radius: 25px;
+    opacity: 0.5;
+    box-shadow: -10px 8px 10px black;
+    display: inline-flex;
+}
+.Input{
+    outline: none;
+    font-family: 'Play', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    height: 22px;
+    border-radius: 15px;
+    transform: translate(-50%);
+    box-shadow: 0px 0px 10px white;
+}
+.Calcular{
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 85px;
+    font-family: 'Play', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    top: 70px;
+    left: 50%;
+    transform: translate(-295%);
+    box-shadow: 0px 0px 10px white;
+}
+
+/* Contas Box */
+.ContasBox{
+    background-color: none;
+    position: absolute;
+    height: 280px;
+    width: 400px;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+    display: inline-block;
+}
+.Contas1{
+    position: relative;
+    margin-left: 30px;
+    top: 2%;
+}
+.Contas2{
+    position: relative;
+    margin-left: 220px;
+    top: -92.8%;
+}
+.C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, .C10{
+    margin-top: 8px;
+    height: 45px;
+    width: 150px;
+    background: rgb(255, 255, 255);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 0px 10px white;
+}
+.ContaText{
+    position: relative;
+    top:50%;
+    transform: translate(0%, -50%);
+    cursor: default;
+    font-family: 'Play', sans-serif;
+    font-size: 16.5px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 550px){
+    .ContasDiv{
+        transform: scale(0.75) translate(-66%, -120%);
+    }
+}
+@media screen and (max-width: 415px){
+    .ContasDiv{
+        transform: scale(0.65) translate(-76.5%, -130%);
+    }
+    .ContaText{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 345px){
+    .ContasDiv{
+        width: 350px;
+    }
+}
+@media screen and (max-height: 595px){
+    .ContasDiv{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-height: 560px){
+    .ContasDiv{
+        transform: scale(0.8) translate(-64%, -85%);
+    }
+}
+@media screen and (max-height: 485px){
+    .ContasDiv{
+        transform: scale(0.8) translate(-64%, -80%);
+    }
+}
+@media screen and (max-height: 485px){
+    .ContasDiv{
+        transform: scale(0.75) translate(-69%, -90%);
+    }
+    .TítuloDiv{
+        top: 35px;
+    }
+}
+@media screen and (max-height: 405px){
+    .ContasDiv{
+        transform: scale(0.75) translate(-69%, -91%);
+    }
+    .TítuloDiv{
+        top: 25px;
+    }
+}
+@media screen and (max-height: 390px){
+    .ContasDiv{
+        transform: scale(0.65) translate(-80%, -100%);
+    }
+    .TítuloDiv{
+        top: 25px;
+    }
+    .ContaText{
+        font-size: 18px;
+    }
+}
+@media screen and (max-height: 390px){
+    .ContasDiv{
+        transform: scale(0.62) translate(-85%, -110%);
+    }
+    .TítuloDiv{
+        top: 10px;
+        transform: scale(0.7) translate(-76%);
+    }
+}
+@media screen and (max-height: 332px){
+    .ContasDiv{
+        transform: scale(0.62) translate(-85%, -108%);
+    }
+}
